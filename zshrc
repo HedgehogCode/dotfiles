@@ -33,8 +33,11 @@ antigen theme agnoster
 # Tell Antigen that you're done.
 antigen apply
 
-# ==================================================== PATH + ALIASES =========
+# ==================================================== VARIABLES + ALIASES ====
 
-# Add my home bin folder to the path
+# Add my home bin folder to PATH
 PATH=${HOME}/bin:${PATH}
 
+# Set VISUAL and EDITOR variable to vim
+VISUAL=vim
+EDITOR=${VISUAL}
