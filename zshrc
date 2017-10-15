@@ -1,3 +1,4 @@
+# ==================================================== GENERATED ==============
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -13,7 +14,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# ==================================================== Antigen ================
+# ==================================================== ANTIGEN ================
 source ${HOME}/apps/antigen/antigen.zsh
 
 # Load the oh-my-zsh's library.
@@ -31,3 +32,9 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
+
+# ==================================================== PATH + ALIASES =========
+
+# Add my home bin folder to the path
+PATH=${HOME}/bin:${PATH}
+
