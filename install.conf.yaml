@@ -3,4 +3,5 @@
 - link:
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
 
