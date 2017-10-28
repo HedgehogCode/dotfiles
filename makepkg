@@ -1,0 +1,9 @@
+# Arch pacman makepkg configuration
+# See https://wiki.archlinux.org/index.php/makepkg
+
+
+# Use multiple jobs with make
+MAKEFLAGS="-j$(nproc)"
+
+# Use muliple cores on compression with xz
+COMPRESSXZ=(xz -c -z --threads=0)

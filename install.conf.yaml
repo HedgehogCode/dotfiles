@@ -4,4 +4,4 @@
     ~/.zshrc: zshrc
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
-
+    ~/.config/pacman/makepkg.conf: makepkg
