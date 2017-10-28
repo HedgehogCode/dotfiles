@@ -35,8 +35,12 @@ antigen apply
 
 # ==================================================== VARIABLES + ALIASES ====
 
+# ========== Additions to the PATH
 # Add my home bin folder to PATH
 PATH=${HOME}/bin:${PATH}
+
+# Add ruby gem to PATH
+PATH=${HOME}/.gem/ruby/2.4.0/bin:${PATH}
 
 # Set VISUAL and EDITOR variable to vim
 VISUAL=vim
