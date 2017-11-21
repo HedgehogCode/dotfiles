@@ -45,3 +45,6 @@ PATH=${HOME}/.gem/ruby/2.4.0/bin:${PATH}
 # Set VISUAL and EDITOR variable to vim
 VISUAL=vim
 EDITOR=${VISUAL}
+
+# added by travis gem
+[ -f /home/bw/.travis/travis.sh ] && source /home/bw/.travis/travis.sh
