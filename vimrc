@@ -2,8 +2,9 @@
 " VUNDLE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+set hidden
+filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -22,12 +23,16 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Markdown syntax
 Plugin 'plasticboy/vim-markdown'
+Plugin 'nelstrom/vim-markdown-folding'
 
 " Trailing whitspaces
 Plugin 'bronson/vim-trailing-whitespace'
 
 " Editorconfig
 Plugin 'editorconfig/editorconfig-vim'
+
+" Ctrlspace
+Plugin 'vim-ctrlspace/vim-ctrlspace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,6 +48,11 @@ filetype plugin indent on    " required
 set number
 highlight LineNr ctermfg=grey ctermbg=black
 
+" Ctrlspace
+if executable("ag")
+	let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " APPEARANCE
@@ -53,6 +63,7 @@ syntax enable
 
 " vim-airline theme
 let g:airline_theme='solarized'
+let g:airline#extensions#tabline#enabled = 1
 
 " ============= Invisible characters
 " Shortcut to rapidly toggle `set list`
