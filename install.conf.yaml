@@ -2,6 +2,7 @@
 
 - link:
     ~/.zshrc: zshrc
+    ~/.antigenrc: antigenrc
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.config/pacman/makepkg.conf: makepkg

@@ -14,7 +14,7 @@ $ ./install
 Install antigen:
 ```
 mkdir -p ~/apps/antigen/
-curl -L git.io/antigen > ~/apps/antigen/antigen.zsh
+git clone git@github.com:zsh-users/antigen.git ~/apps/antigen
 ```
 
 ### VIM
