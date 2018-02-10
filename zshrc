@@ -24,11 +24,18 @@ source ${HOME}/.antigenrc
 PATH=${HOME}/bin:${PATH}
 
 # Add ruby gem to PATH
-PATH=${HOME}/.gem/ruby/2.4.0/bin:${PATH}
+PATH=${HOME}/.gem/ruby/2.5.0/bin:${PATH}
 
 # Set VISUAL and EDITOR variable to vim
 VISUAL=vim
 EDITOR=${VISUAL}
 
+# Add Android SDK Home
+ANDROID_HOME=${HOME}/apps/android-sdk
 # added by travis gem
 [ -f /home/bw/.travis/travis.sh ] && source /home/bw/.travis/travis.sh
+
+# ========== Aliases
+# Update all pip packages
+alias pipupdate='pip install $(pip list --outdated | awk '"'"'{ print $1 }'"'"') --upgrade'
+
