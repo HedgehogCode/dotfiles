@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [user]
 	name = Benjamin Wilhelm
 	email = benjamin.wilhelm@uni-konstanz.de
