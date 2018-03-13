@@ -23,7 +23,13 @@ source ${HOME}/.antigenrc
 # Add my home bin folder to PATH
 PATH=${HOME}/bin:${PATH}
 
-# Add ruby gem to PATH
+# Source exec paths file (System dependent additions to the PATH)
+EXEC_PATHS_RC=${HOME}/bin/execpathsrc
+if [ -f $EXEC_PATHS_RC ]; then
+	source $EXEC_PATHS_RC
+fi
+
+# TODO Remove and add to execpathrc / Add ruby gem to PATH
 PATH=${HOME}/.gem/ruby/2.5.0/bin:${PATH}
 
 # Set VISUAL and EDITOR variable to vim
