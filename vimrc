@@ -46,6 +46,9 @@ Plugin 'nelstrom/vim-markdown-folding'
 " Python
 Plugin 'tmhedberg/simpylfold'
 
+" Syntax checking
+Plugin 'vim-syntastic/syntastic'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -67,6 +70,19 @@ endif
 
 " Python
 let g:SimpylFold_docstring_preview=1
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+	project_base_dir = os.environ['VIRTUAL_ENV']
+	activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+	execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+" Auto-completion
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " APPEARANCE
@@ -102,3 +118,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " folding with spacebar
 nnoremap <space> za
+
+" Toggle nerd-tree
+map <leader>t :NERDTreeToggle<CR>
