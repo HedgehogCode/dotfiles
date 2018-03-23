@@ -29,9 +29,6 @@ if [ -f $EXEC_PATHS_RC ]; then
 	source $EXEC_PATHS_RC
 fi
 
-# TODO Remove and add to execpathrc / Add ruby gem to PATH
-PATH=${HOME}/.gem/ruby/2.5.0/bin:${PATH}
-
 # Set VISUAL and EDITOR variable to vim
 VISUAL=vim
 EDITOR=${VISUAL}
