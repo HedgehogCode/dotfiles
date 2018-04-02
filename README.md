@@ -19,8 +19,17 @@ git clone git@github.com:zsh-users/antigen.git ~/apps/antigen
 
 ### VIM
 
+#### Vundle
+
 Install vundle:
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 Open vim and run `PluginInstall`
+
+#### YouCompleteMe
+
+```
+cd ~/.vim/bundle/youcompleteme
+./install.sh
+```
