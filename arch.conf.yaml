@@ -1,0 +1,4 @@
+- clean: ['~']
+
+- link:
+    ~/.config/pacman/makepkg.conf: makepkg

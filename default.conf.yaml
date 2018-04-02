@@ -6,4 +6,3 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.vimrc: vimrc
-    ~/.config/pacman/makepkg.conf: makepkg
