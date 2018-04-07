@@ -43,11 +43,17 @@ Plugin 'valloric/youcompleteme'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nelstrom/vim-markdown-folding'
 
+" LaTex
+Plugin 'lervag/vimtex'
+
 " Python
 Plugin 'tmhedberg/simpylfold'
 
 " Syntax checking
 Plugin 'vim-syntastic/syntastic'
+
+" Extended % matching
+Plugin 'matchit.zip'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,6 +89,8 @@ EOF
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+" Disable vimtex callback warning
+let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " APPEARANCE
@@ -97,7 +105,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " ============= Invisible characters
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <leader>h :set list!<CR>
 
 " Set invisible characters symbols
 set listchars=tab:▸\ ,eol:¬,space:·
