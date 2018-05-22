@@ -9,13 +9,13 @@ antigen bundles <<EOBUNDLES
 	command-not-found
 	colored-man-pages
 
+	# A nice theme
+	agkozak/agkozak-zsh-theme
+
 	# Some usefull plugins
 	zsh-users/zsh-syntax-highlighting
 	zsh-users/zsh-completions
 EOBUNDLES
-
-# Load the theme.
-antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
