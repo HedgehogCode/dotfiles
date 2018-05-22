@@ -42,3 +42,4 @@ ANDROID_HOME=${HOME}/apps/android-sdk
 # Update all pip packages
 alias pipupdate='pip install $(pip list --outdated | awk '"'"'{ print $1 }'"'"') --upgrade'
 
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
