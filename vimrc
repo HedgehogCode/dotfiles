@@ -65,10 +65,6 @@ filetype plugin indent on    " required
 " GENERAL
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Enable line numbers
-set number
-highlight LineNr ctermfg=grey ctermbg=black
-
 " Ctrlspace
 if executable("ag")
 	let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
