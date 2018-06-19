@@ -15,7 +15,29 @@ compinit
 # End of lines added by compinstall
 
 # ==================================================== ANTIGEN ================
-source ${HOME}/.antigenrc
+source ${HOME}/apps/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+	# Bundles from the default repo (robbyrussell's oh-my-zsh).
+	git
+	command-not-found
+	colored-man-pages
+	vi-mode
+	history-substring-search
+
+	# A nice theme
+	agkozak/agkozak-zsh-theme
+
+	# Some usefull plugins
+	zsh-users/zsh-syntax-highlighting
+	zsh-users/zsh-completions
+EOBUNDLES
+
+# Tell Antigen that you're done.
+antigen apply
 
 # ==================================================== VARIABLES + ALIASES ====
 

@@ -2,7 +2,6 @@
 
 - link:
     ~/.zshrc: zshrc
-    ~/.antigenrc: antigenrc
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.vimrc: vimrc
