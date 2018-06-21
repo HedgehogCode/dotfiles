@@ -27,6 +27,7 @@ antigen bundles <<EOBUNDLES
 	colored-man-pages
 	vi-mode
 	history-substring-search
+	tmux
 
 	# A nice theme
 	agkozak/agkozak-zsh-theme
