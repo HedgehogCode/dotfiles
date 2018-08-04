@@ -45,6 +45,7 @@ Plugin 'nelstrom/vim-markdown-folding'
 
 " LaTex
 Plugin 'lervag/vimtex'
+Plugin 'matze/vim-tex-fold'
 
 " Python
 Plugin 'tmhedberg/simpylfold'
@@ -87,6 +88,12 @@ map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Disable vimtex callback warning
 let g:vimtex_compiler_latexmk = {'callback' : 0}
+
+" Word line wrapping
+set wrap lbr
+
+" 5 lines of content
+set so=5
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " APPEARANCE
