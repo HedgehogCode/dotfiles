@@ -89,6 +89,12 @@ map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 " Disable vimtex callback warning
 let g:vimtex_compiler_latexmk = {'callback' : 0}
 
+" Vimtex-youcompleteme autocompletion
+if !exists('g:ycm_semantic_triggers')
+	let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
+
 " Word line wrapping
 set wrap lbr
 
