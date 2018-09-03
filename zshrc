@@ -3,6 +3,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
+KEYTIMEOUT=1
 setopt autocd extendedglob
 unsetopt beep
 bindkey -v
