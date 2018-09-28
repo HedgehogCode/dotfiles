@@ -29,6 +29,7 @@ antigen bundles <<EOBUNDLES
 	vi-mode
 	history-substring-search
 	tmux
+	mvn
 
 	# A nice theme
 	agkozak/agkozak-zsh-theme
