@@ -42,6 +42,12 @@ EOBUNDLES
 # Tell Antigen that you're done.
 antigen apply
 
+# History substring search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
 # ==================================================== VARIABLES + ALIASES ====
 
 # ========== Additions to the PATH

@@ -2,3 +2,4 @@
 
 - link:
     ~/.config/pacman/makepkg.conf: makepkg
+    ~/.config/chromium-flags.conf: chromium-flags
