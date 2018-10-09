@@ -37,6 +37,9 @@ antigen bundles <<EOBUNDLES
 	# Some usefull plugins
 	zsh-users/zsh-syntax-highlighting
 	zsh-users/zsh-completions
+
+	# Alias tips
+	djui/alias-tips
 EOBUNDLES
 
 # Tell Antigen that you're done.
