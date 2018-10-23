@@ -58,7 +58,7 @@ Plugin 'matchit.zip'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin on    " required
 " Put your non-Plugin stuff after this line
 
 
@@ -140,4 +140,4 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <space> za
 
 " Toggle nerd-tree
-map <leader>t :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
