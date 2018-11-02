@@ -30,6 +30,8 @@ antigen bundles <<EOBUNDLES
 	history-substring-search
 	tmux
 	mvn
+	gitignore
+	vagrant
 
 	# A nice theme
 	agkozak/agkozak-zsh-theme
