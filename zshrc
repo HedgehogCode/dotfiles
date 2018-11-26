@@ -39,6 +39,7 @@ antigen bundles <<EOBUNDLES
 	# Some usefull plugins
 	zsh-users/zsh-syntax-highlighting
 	zsh-users/zsh-completions
+	zsh-users/zsh-autosuggestions
 
 	# Alias tips
 	djui/alias-tips
@@ -73,6 +74,9 @@ EDITOR=${VISUAL}
 ANDROID_HOME=${HOME}/apps/android-sdk
 # added by travis gem
 [ -f /home/bw/.travis/travis.sh ] && source /home/bw/.travis/travis.sh
+
+# Set the autosuggestion color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=11
 
 # ========== Aliases
 # Update all pip packages
