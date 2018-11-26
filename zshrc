@@ -86,3 +86,6 @@ alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Open a file
 alias open='xdg-open >/dev/null 2>/dev/null'
+
+# Git Push Force!
+alias gpf='git push --force-with-lease'
