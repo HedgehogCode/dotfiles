@@ -11,3 +11,5 @@
 	clean = git-lfs clean -- %f
 [credential]
 	helper = cache
+[pull]
+	rebase = true
