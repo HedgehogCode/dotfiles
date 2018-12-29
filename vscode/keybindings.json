@@ -1,0 +1,8 @@
+[
+  // Remap capslock to escape
+  {
+    "key": "capslock", 
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl" 
+  }
+]

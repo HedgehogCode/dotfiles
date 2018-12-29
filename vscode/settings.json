@@ -1,0 +1,90 @@
+{
+  // ----------------------------------------------------------------
+  // General settings
+  // ----------------------------------------------------------------
+  // Title borders with menu
+  "window.titleBarStyle": "custom",
+  // No updates -> Update via system updater
+  "update.channel": "none",
+  // Wrap lines
+  "editor.wordWrap": "on",
+  // Hide feedback icon
+  "workbench.statusBar.feedback.visible": false,
+  // Render white spaces
+  "editor.renderWhitespace": "boundary",
+  //
+  // ----------------------------------------------------------------
+  // LaTeX extension
+  // ----------------------------------------------------------------
+  "latex-workshop.view.pdf.viewer": "tab",
+  //
+  // ----------------------------------------------------------------
+  // TODO highlighter extension
+  // ----------------------------------------------------------------
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.tex",
+    "**/*.java",
+    "**/*.py"
+  ],
+  //
+  // ----------------------------------------------------------------
+  // Spell checker
+  // ----------------------------------------------------------------
+  // Ignore TODOs
+  "spellright.ignoreRegExps": [
+    "/TODO/gm"
+  ],
+  //
+  // ----------------------------------------------------------------
+  // VIM
+  // ----------------------------------------------------------------
+  // Enable easymotion
+  "vim.easymotion": true,
+  // Move only one line in wrapped lines
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "down"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "up"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    }
+  ]
+}
