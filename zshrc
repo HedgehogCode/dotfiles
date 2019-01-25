@@ -72,8 +72,6 @@ EDITOR=${VISUAL}
 
 # Add Android SDK Home
 ANDROID_HOME=${HOME}/apps/android-sdk
-# added by travis gem
-[ -f /home/bw/.travis/travis.sh ] && source /home/bw/.travis/travis.sh
 
 # Set the autosuggestion color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=11
