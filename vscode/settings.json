@@ -12,6 +12,8 @@
   "workbench.statusBar.feedback.visible": false,
   // Render white spaces
   "editor.renderWhitespace": "boundary",
+  // Set the font size of the terminal (Workaround for underscores not showing)
+  "terminal.integrated.fontSize": 13,
   //
   // ----------------------------------------------------------------
   // LaTeX extension
