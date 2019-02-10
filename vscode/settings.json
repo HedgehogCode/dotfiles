@@ -12,6 +12,8 @@
   "workbench.statusBar.feedback.visible": false,
   // Render white spaces
   "editor.renderWhitespace": "boundary",
+  // Don't show the minimap
+  "editor.minimap.enabled": false,
   // Set the font size of the terminal (Workaround for underscores not showing)
   "terminal.integrated.fontSize": 13,
   //
