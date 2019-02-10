@@ -19,6 +19,10 @@
   // LaTeX extension
   // ----------------------------------------------------------------
   "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.chktex.enabled": true,
+  "latex-workshop.chktex.run": "onType",
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.latex.autoBuild.onTexChange.enabled": true,
   //
   // ----------------------------------------------------------------
   // TODO highlighter extension
