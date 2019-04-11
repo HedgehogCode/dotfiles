@@ -16,6 +16,8 @@
   "editor.minimap.enabled": false,
   // Set the font size of the terminal (Workaround for underscores not showing)
   "terminal.integrated.fontSize": 13,
+  // Auto-fetch git repository
+  "git.autofetch": true,
   //
   // ----------------------------------------------------------------
   // LaTeX extension
@@ -24,7 +26,7 @@
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.chktex.run": "onType",
   "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.latex.autoBuild.onTexChange.enabled": true,
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
   //
   // ----------------------------------------------------------------
   // TODO highlighter extension
@@ -94,5 +96,6 @@
         "k"
       ]
     }
-  ]
+  ],
+  "window.zoomLevel": 0
 }
