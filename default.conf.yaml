@@ -5,5 +5,3 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.vimrc: vimrc
-    ~/.config/VSCodium/User/settings.json: vscode/settings.json
-    ~/.config/VSCodium/User/keybindings.json: vscode/keybindings.json
