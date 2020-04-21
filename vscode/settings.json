@@ -14,7 +14,7 @@
   "editor.renderWhitespace": "boundary",
   // Don't show the minimap
   "editor.minimap.enabled": false,
-  // Line at 80 and 120 chars
+  // Line at 100 chars
   "editor.rulers": [100],
   // Set the font size of the terminal (Workaround for underscores not showing)
   "terminal.integrated.fontSize": 13,
