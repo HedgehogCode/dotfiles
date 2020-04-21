@@ -5,7 +5,7 @@
   // Title borders with menu
   "window.titleBarStyle": "custom",
   // No updates -> Update via system updater
-  "update.channel": "none",
+  "update.mode": "none",
   // Wrap lines
   "editor.wordWrap": "on",
   // Hide feedback icon
@@ -14,6 +14,8 @@
   "editor.renderWhitespace": "boundary",
   // Don't show the minimap
   "editor.minimap.enabled": false,
+  // Line at 80 and 120 chars
+  "editor.rulers": [100],
   // Set the font size of the terminal (Workaround for underscores not showing)
   "terminal.integrated.fontSize": 13,
   // Auto-fetch git repository
@@ -97,5 +99,12 @@
       ]
     }
   ],
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Material Theme High Contrast",
+  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "python.dataScience.askForKernelRestart": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "terminal.integrated.scrollback": 100000
 }
