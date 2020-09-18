@@ -27,34 +27,8 @@ Plugin 'vim-airline/vim-airline-themes'
 " Trailing whitspaces
 Plugin 'bronson/vim-trailing-whitespace'
 
-" Editorconfig
-Plugin 'editorconfig/editorconfig-vim'
-
-" Ctrlspace
-Plugin 'vim-ctrlspace/vim-ctrlspace'
-
-" NERD tree
-Plugin 'scrooloose/nerdtree'
-
 " Autocompletion
 Plugin 'valloric/youcompleteme'
-
-" Markdown syntax
-Plugin 'plasticboy/vim-markdown'
-Plugin 'nelstrom/vim-markdown-folding'
-
-" LaTex
-Plugin 'lervag/vimtex'
-Plugin 'matze/vim-tex-fold'
-
-" Python
-Plugin 'tmhedberg/simpylfold'
-
-" Syntax checking
-Plugin 'vim-syntastic/syntastic'
-
-" Extended % matching
-Plugin 'matchit.zip'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,34 +40,14 @@ filetype plugin on    " required
 " GENERAL
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Ctrlspace
-if executable("ag")
-	let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
-endif
-
-" Python
-let g:SimpylFold_docstring_preview=1
-py3 << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-	project_base_dir = os.environ['VIRTUAL_ENV']
-	activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-	execfile(activate_this, dict(__file__=activate_this))
-EOF
-
 " Auto-completion
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" Disable vimtex callback warning
-let g:vimtex_compiler_latexmk = {'callback' : 0}
 
 " Vimtex-youcompleteme autocompletion
 if !exists('g:ycm_semantic_triggers')
 	let g:ycm_semantic_triggers = {}
 endif
-let g:ycm_semantic_triggers.tex = g:vimtex#re#youcompleteme
 
 " Word line wrapping
 set wrap lbr
@@ -112,7 +66,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax enable
 
 " vim-airline theme
-let g:airline_theme='solarized'
+let g:airline_theme='simple'
 let g:airline#extensions#tabline#enabled = 1
 
 " ============= Invisible characters
@@ -138,6 +92,3 @@ nnoremap <C-H> <C-W><C-H>
 
 " folding with spacebar
 nnoremap <space> za
-
-" Toggle nerd-tree
-map <C-n> :NERDTreeToggle<CR>
