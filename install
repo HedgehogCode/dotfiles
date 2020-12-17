@@ -9,6 +9,26 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Install antigen
+if [ ! -f ~/apps/antigen/antigen.zsh ]; then
+	echo "installing antigen..."
+	mkdir -p ~/apps/antigen/
+	git clone --depth 1 https://github.com/zsh-users/antigen.git ~/apps/antigen
+else
+	echo "antigen already installed."
+fi
+
+# Install vundle
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+	echo "installing vundle..."
+	mkdir -p ~/.vim/bundle/Vundle.vim
+	git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+else
+	echo "vundle already installed."
+fi
+vim "+:PluginInstall" "+:q" "+q"
+
+# Install dotfiles
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
