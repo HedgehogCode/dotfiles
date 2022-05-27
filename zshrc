@@ -87,6 +87,8 @@ alias open='xdg-open >/dev/null 2>/dev/null'
 
 # Git Push Force!
 alias gpf='git push --force-with-lease'
+alias grbim='git rebase -i $(git_main_branch)'
 
 # List size of all files in folder
 alias dl='du -sh *'
+
