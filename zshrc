@@ -39,7 +39,7 @@ antigen bundles <<EOBUNDLES
 	# Some usefull plugins
 	zsh-users/zsh-syntax-highlighting
 	zsh-users/zsh-completions
-	zsh-users/zsh-autosuggestions
+	# zsh-users/zsh-autosuggestions
 
 	# Alias tips
 	djui/alias-tips
