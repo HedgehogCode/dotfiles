@@ -85,9 +85,10 @@ alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 # Open a file
 alias open='xdg-open >/dev/null 2>/dev/null'
 
-# Git Push Force!
+# Git aliases
 alias gpf='git push --force-with-lease'
 alias grbim='git rebase -i $(git_main_branch)'
+alias gsur='git submodule update --init --recursive'
 
 # List size of all files in folder
 alias dl='du -sh *'
