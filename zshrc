@@ -76,6 +76,11 @@ ANDROID_HOME=${HOME}/apps/android-sdk
 # Set the autosuggestion color
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=11
 
+
+# ========== Application shortcuts
+alias lg='lazygit'
+alias nv='nvim'
+
 # ========== Aliases
 # Update all pip packages
 alias pipupdate='pip install $(pip list --outdated | awk '"'"'{ print $1 }'"'"') --upgrade'
@@ -92,4 +97,15 @@ alias gsur='git submodule update --init --recursive'
 
 # List size of all files in folder
 alias dl='du -sh *'
+
+# Delete all folders with a given name in the tree
+alias replace_all='f() {find ./ -type f -name "$1" -exec sed -i "s/$2/$3/g" {} \; };f'
+
+
+# HSTR configuration - add this to ~/.zshrc
+export HISTFILE=~/.histfile
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor       # get more colors
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
