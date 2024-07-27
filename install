@@ -18,16 +18,6 @@ else
 	echo "antigen already installed."
 fi
 
-# Install vundle
-if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
-	echo "installing vundle..."
-	mkdir -p ~/.vim/bundle/Vundle.vim
-	git clone --depth 1 https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-else
-	echo "vundle already installed."
-fi
-vim "+:PluginInstall" "+:q" "+q"
-
 # Install dotfiles
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
