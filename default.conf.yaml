@@ -1,8 +1,4 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-    ~/.gitconfig: gitconfig
-    ~/.gitignore: gitignore
-    ~/.vimrc: vimrc
-    ~/.config/nvim: nvim
+    ~/.hammerspoon: hammerspoon
